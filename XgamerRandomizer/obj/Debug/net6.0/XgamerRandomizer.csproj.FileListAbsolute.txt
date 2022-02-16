@@ -1,0 +1,15 @@
+C:\Users\ecs\source\repos\XgamerRandomizer\XgamerRandomizer\bin\Debug\net6.0\XgamerRandomizer.exe
+C:\Users\ecs\source\repos\XgamerRandomizer\XgamerRandomizer\bin\Debug\net6.0\XgamerRandomizer.deps.json
+C:\Users\ecs\source\repos\XgamerRandomizer\XgamerRandomizer\bin\Debug\net6.0\XgamerRandomizer.runtimeconfig.json
+C:\Users\ecs\source\repos\XgamerRandomizer\XgamerRandomizer\bin\Debug\net6.0\XgamerRandomizer.dll
+C:\Users\ecs\source\repos\XgamerRandomizer\XgamerRandomizer\bin\Debug\net6.0\ref\XgamerRandomizer.dll
+C:\Users\ecs\source\repos\XgamerRandomizer\XgamerRandomizer\bin\Debug\net6.0\XgamerRandomizer.pdb
+C:\Users\ecs\source\repos\XgamerRandomizer\XgamerRandomizer\obj\Debug\net6.0\XgamerRandomizer.csproj.AssemblyReference.cache
+C:\Users\ecs\source\repos\XgamerRandomizer\XgamerRandomizer\obj\Debug\net6.0\XgamerRandomizer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ecs\source\repos\XgamerRandomizer\XgamerRandomizer\obj\Debug\net6.0\XgamerRandomizer.AssemblyInfoInputs.cache
+C:\Users\ecs\source\repos\XgamerRandomizer\XgamerRandomizer\obj\Debug\net6.0\XgamerRandomizer.AssemblyInfo.cs
+C:\Users\ecs\source\repos\XgamerRandomizer\XgamerRandomizer\obj\Debug\net6.0\XgamerRandomizer.csproj.CoreCompileInputs.cache
+C:\Users\ecs\source\repos\XgamerRandomizer\XgamerRandomizer\obj\Debug\net6.0\XgamerRandomizer.dll
+C:\Users\ecs\source\repos\XgamerRandomizer\XgamerRandomizer\obj\Debug\net6.0\ref\XgamerRandomizer.dll
+C:\Users\ecs\source\repos\XgamerRandomizer\XgamerRandomizer\obj\Debug\net6.0\XgamerRandomizer.pdb
+C:\Users\ecs\source\repos\XgamerRandomizer\XgamerRandomizer\obj\Debug\net6.0\XgamerRandomizer.genruntimeconfig.cache
