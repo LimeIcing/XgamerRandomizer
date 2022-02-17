@@ -32,7 +32,7 @@ while (input != ConsoleKey.D4)
                 break;
             }
 
-            var randomIndex = new Random().Next(flavors.Count);
+            var randomIndex = new Random().Next(0, flavors.Count);
             Console.WriteLine(flavors[randomIndex]);
             input = ConsoleKey.D4;
             break;
