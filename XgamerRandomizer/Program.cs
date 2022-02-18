@@ -6,7 +6,6 @@ var fileInfo = new FileInfo(path);
 if (!fileInfo.Exists)
     File.Create(path);
 
-//var fileStream = new FileStream(path, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None);
 var text = File.ReadAllText(path);
 List<string> flavors = new();
 try
