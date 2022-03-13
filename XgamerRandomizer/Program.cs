@@ -1,10 +1,13 @@
 ﻿using System.Text.Json;
 
-var path = "flavors.json";
+var path = $@"{Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.Parent.FullName}\Storage\flavors.json";
 var fileInfo = new FileInfo(path);
 
 if (!fileInfo.Exists)
-    File.Create(path);
+    using (fileInfo.Create()) { }
+
+
+
 
 var text = File.ReadAllText(path);
 List<string> flavors = new();
