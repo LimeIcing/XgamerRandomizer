@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-var path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.Parent.FullName + @"\Storage\snacks.json";
+var path = $@"{Directory.GetParent(Environment.CurrentDirectory)?.Parent?.Parent?.Parent?.FullName}\Storage\snacks.json" ?? @"Storage\snacks.json";
 var fileInfo = new FileInfo(path);
 if (!fileInfo.Exists)
     using (fileInfo.Create()) { }
