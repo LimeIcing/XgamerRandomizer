@@ -3,8 +3,7 @@
 var path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.Parent.FullName + @"\Storage\snacks.json";
 var fileInfo = new FileInfo(path);
 if (!fileInfo.Exists)
-    using (fileInfo.Create()){}
-
+    using (fileInfo.Create()) { }
 
 var text = File.ReadAllText(path);
 List<string> flavors = new();
