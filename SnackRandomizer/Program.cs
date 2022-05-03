@@ -17,7 +17,12 @@ ConsoleKey input = ConsoleKey.Execute;
 Console.WriteLine("Welcome!");
 while (input != ConsoleKey.D4)
 {
-    Console.WriteLine("1. Get a random snack.\n2. Add a snack.\n3. Remove a snack.\n4. Exit.");
+    Console.WriteLine(
+        "1. Get a random snack.\n" +
+        "2. List snacks.\n" +
+        "3. Add a snack.\n" +
+        "4. Remove a snack.\n" +
+        "5. Exit.");
     input = Console.ReadKey().Key;
     Console.WriteLine('\n');
     string? stringInput;
@@ -36,6 +41,12 @@ while (input != ConsoleKey.D4)
             break;
 
         case ConsoleKey.D2:
+            foreach (var flavor in flavors)
+                Console.WriteLine(flavor);
+
+            break;
+
+        case ConsoleKey.D3:
             Console.Write("Input the name of the snack you want to add: ");
             stringInput = Console.ReadLine();
             if (string.IsNullOrWhiteSpace(stringInput))
@@ -48,7 +59,7 @@ while (input != ConsoleKey.D4)
             }
             break;
 
-        case ConsoleKey.D3:
+        case ConsoleKey.D4:
             Console.WriteLine("Type in a snack from the list:");
             foreach (var flavor in flavors)
                 Console.WriteLine(flavor);
@@ -64,11 +75,11 @@ while (input != ConsoleKey.D4)
             }
             break;
 
-        case ConsoleKey.D4:
+        case ConsoleKey.D5:
             break;
 
         default:
-            input = ConsoleKey.D4;
+            input = ConsoleKey.D5;
             break;
     }
 }

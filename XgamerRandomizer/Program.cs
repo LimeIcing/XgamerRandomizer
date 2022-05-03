@@ -12,13 +12,18 @@ try
 {
     flavors = JsonSerializer.Deserialize<List<string>>(text) ?? new List<string>();
 }
-catch (JsonException){}
+catch (JsonException) { }
 
 ConsoleKey input = ConsoleKey.Execute;
 Console.WriteLine("Welcome!");
 while (input != ConsoleKey.D4)
 {
-    Console.WriteLine("1. Get a random flavor.\n2. Add a flavor.\n3. Remove a flavor.\n4. Exit.");
+    Console.WriteLine(
+        "1. Get a random flavor.\n" +
+        "2. List flavors.\n" +
+        "3. Add a flavor.\n" +
+        "4. Remove a flavor.\n" +
+        "5. Exit.");
     input = Console.ReadKey().Key;
     Console.WriteLine('\n');
     string? stringInput;
@@ -37,6 +42,12 @@ while (input != ConsoleKey.D4)
             break;
 
         case ConsoleKey.D2:
+            foreach (var flavor in flavors)
+                Console.WriteLine(flavor);
+
+            break;
+
+        case ConsoleKey.D3:
             Console.Write("Input the name of the flavor you want to add: ");
             stringInput = Console.ReadLine();
             if (string.IsNullOrWhiteSpace(stringInput))
@@ -49,7 +60,7 @@ while (input != ConsoleKey.D4)
             }
             break;
 
-        case ConsoleKey.D3:
+        case ConsoleKey.D4:
             Console.WriteLine("Type in a flavor from the list:");
             foreach (var flavor in flavors)
                 Console.WriteLine(flavor);
@@ -65,11 +76,11 @@ while (input != ConsoleKey.D4)
             }
             break;
 
-        case ConsoleKey.D4:
+        case ConsoleKey.D5:
             break;
 
         default:
-            input = ConsoleKey.D4;
+            input = ConsoleKey.D5;
             break;
     }
 }
